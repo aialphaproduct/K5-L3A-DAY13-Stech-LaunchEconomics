@@ -77,14 +77,23 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - Gắn nhãn 20 ca lỗi (nhãn 1, CP3) — phần phụ
 - Hỗ trợ điền `report/team/bang_loi.md` (bảng khắc phục 5 ca)
+- Đọc đề, chuẩn bị năm định nghĩa Google PAIR và giải thích lựa chọn theo nguyên nhân gốc; đối chiếu với bộ nhãn của Bùi Lê Công Tuấn.
+- Hỗ trợ kiểm tra sự nhất quán của số liệu trong hồ sơ khi nhóm yêu cầu.
 
 ### Đóng góp cụ thể
 
--
+- **Chuẩn bị CP3:** tạo tài liệu tóm tắt năm loại lỗi, điểm dễ nhầm và đủ 20 tình huống trong `docs/tom_tat_chuan_bi_gan_nhan_CP3.md`; giữ nguyên số ca để đối chiếu với đề.
+- **Nhãn người 1:** điền đủ 20 ca từ bộ nhãn đã chốt trước khi xem nhãn người 2. Phân bố: Do người dùng 4 ca, Hệ thống 5 ca, Ngữ cảnh 4 ca, Giới hạn hệ thống 4 ca, Ngầm 3 ca.
+- **Đối chiếu:** giữ nguyên nhãn người 2 của Tuấn, ghi nhận 20/20 ca trùng (100%) và điền nhãn thống nhất; không có ca bất đồng. Tỉ lệ này đo độ trùng hai bộ nhãn, chưa phải độ đúng so với đáp án giảng viên.
+- **Bảng khắc phục:** hoàn thiện cách giám sát cho các ca 9, 7, 18, 4, 17 trên bảng ban đầu do Tuấn chuẩn bị, đủ năm loại lỗi; làm rõ event, ngưỡng, tần suất, mẫu số và vai trò phụ trách. Các ngưỡng là đề xuất cho pilot.
+- **Hỗ trợ kiểm số B4:** dùng ChatGPT/Codex đọc hai CSV, phân biệt 982 yêu cầu `noi_dia + hang_nang`, 948 yêu cầu có ít nhất một lần chạy `ok`, 34 yêu cầu không có lần `ok` và 900 yêu cầu có kết quả cuối `thanh_cong`. Tiền xem lại: 948 × 5 × 2.000 = 9.480.000 đ [simulated]; token/tool tính trên mọi lần chạy của 982 yêu cầu.
 
 ### Bằng chứng
 
--
+- [Báo cáo cá nhân](report/team/2A202603558_PhamDucHongDuc.md); nhánh công việc `feat/cp3-error-labeling`.
+- [Bảng lỗi và khắc phục](report/team/bang_loi.md): 20 nhãn người 1, kết quả đối chiếu, tỉ lệ đồng thuận và năm dòng khắc phục.
+- [Tài liệu chuẩn bị CP3](docs/tom_tat_chuan_bi_gan_nhan_CP3.md): năm định nghĩa và 20 tình huống tóm tắt từ đề gốc.
+- Dữ liệu kiểm số: `src/logix_requests.csv`, `src/logix_runs.csv`; tài liệu đối chiếu B4: `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md`.
 
 ---
 
